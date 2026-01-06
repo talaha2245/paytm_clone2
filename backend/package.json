@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "\"talaha \"",
+  "type": "module",
+  "main": "app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon '/Users/talahanuman/Desktop/paytm-ts/backend/dist/app.js'"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "@types/mongoose": "^5.11.96",
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "mongoose": "^9.1.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cors": "^2.8.19"
+  }
+}
