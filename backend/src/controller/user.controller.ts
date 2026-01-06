@@ -1,4 +1,4 @@
-import type { Request, Response } from "express";
+import { json, type Request, type Response } from "express";
 import bcrypt from "bcrypt";
 import { jwt_screat, salt } from "../Secreat.js";
 import { Account, User } from "../model/models.js";
@@ -62,5 +62,9 @@ export const Handlelogin = async (req: Request, res: Response) => {
     msg : "sucessful ",
     token
   })
+}
 
+export const Handlelogout = async(req:Request , res : Response)=>{
+  res.clearCookie("auth")
+  return res.json("sucessfull logcout ")
 }
